@@ -24,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Préférences"
+            android:onClick="preferenceBtnOnClick"
             android:id="@+id/buttonPref"
             android:layout_gravity="center" />
 
@@ -31,6 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Quitter"
+            android:onClick="quitBtnOnClick"
             android:id="@+id/buttonQuitter"
             android:layout_gravity="center_horizontal|bottom"
             android:layout_marginBottom="30dp" />
