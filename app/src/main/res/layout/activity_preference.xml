@@ -118,6 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sauvergarder et Quitter"
+            android:onClick="saveBtnOnClick"
             android:id="@+id/buttonQuit"
             android:layout_gravity="center_horizontal|bottom"
             android:layout_marginBottom="50dp" />

@@ -1,6 +1,7 @@
 package hypnoric.projetsession;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,9 @@ import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    static final int PREF_FINISHED = 1;
+    private SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +37,6 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this, PreferenceActivity.class);
         startActivity(intent);
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
