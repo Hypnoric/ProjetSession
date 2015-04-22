@@ -1,17 +1,17 @@
 package hypnoric.projetsession;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import android.view.View;
 
 /**
  * Created by Eric on 2015-04-18.
  */
-public class PreferenceActivity extends ActionBarActivity{
+public class PreferenceActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +60,7 @@ public class PreferenceActivity extends ActionBarActivity{
     }
 
     public void saveBtnOnClick(View v){
+        MainActivity.setFirstTimeFalse();
         BackToMenu(MainActivity.PREF_FINISHED);
     }
 
